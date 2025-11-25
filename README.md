@@ -26,6 +26,7 @@ This project analyzes U.S. traffic accidents from 2016 to 2023 with the objectiv
 
 
 ###### Fill missing City by using the most common (mode) city for the same State
+
 def fill_city_by_state(row):
     if pd.isna(row["City"]):
         state = row["State"]
@@ -76,7 +77,7 @@ Accidents['End_Time'] = pd.to_datetime (Accidents['End_Time'])
 
 #### 5. Severe accidents peak at 7–9 AM and 4–6 PM.
 
-#### 56 Rain and fog increase accident risk.
+#### 6. Rain and fog increase accident risk.
 
 #### 7. Low visibility causes higher severity.
 
@@ -89,11 +90,6 @@ Accidents['End_Time'] = pd.to_datetime (Accidents['End_Time'])
 #### 11. At night, junctions and railways are most severe.
 
 #### 12. Short/long distance = higher severity
-
-
-
-
-
 
 
 ## Recommendations
